@@ -1,0 +1,33 @@
+<!-- SHARED FOOTER — loaded by js/includes.js into #site-footer -->
+<div class="footer__inner">
+  <div class="footer__brand">
+    <a href="/index.html" class="footer__logo">OC Wiki</a>
+    <p class="footer__tagline">A personal collection of original characters, stories, and art.</p>
+  </div>
+
+  <div>
+    <h3 class="footer__heading">Navigate</h3>
+    <nav class="footer__links">
+      <a href="/index.html">Home</a>
+      <a href="/characters.html">All Characters</a>
+      <a href="/index.html#about">About</a>
+    </nav>
+  </div>
+
+  <div>
+    <h3 class="footer__heading">Info</h3>
+    <nav class="footer__links">
+      <a href="#">Art Credits</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<div class="footer__bottom">
+  <span>&copy; <span id="footer-year"></span> OC Wiki. All original characters belong to their creator.</span>
+  <span>Made with HTML, CSS &amp; JS</span>
+</div>
+
+<script>
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  OC PAGE TEMPLATE                                           ║
+  ║  HOW TO USE:                                                ║
+  ║  1. Copy this file: cp _template.html oc-name.html          ║
+  ║  2. Create: assets/images/characters/oc-name/               ║
+  ║  3. Add your art files to that folder                        ║
+  ║  4. Find every <!-- TODO: --> comment and fill it in        ║
+  ║  5. Add the character card to characters.html               ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TODO: Update description -->
+  <meta name="description" content="[CHARACTER NAME] — [one-line description]. OC Wiki.">
+  <!-- TODO: Update title -->
+  <title>[Character Name] | OC Wiki</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles — note the ../ prefix since this page is inside /characters/ -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/oc-page.css">
+  <link rel="stylesheet" href="../css/gallery.css">
+</head>
+<body class="page-body">
+
+  <!-- Header placeholder -->
+  <header id="site-header" role="banner"></header>
+
+  <main>
+    <!-- ══════════════════════════════════════════════
+         CHARACTER HERO BANNER
+         TODO: Set --oc-color to this character's accent hex color
+         e.g. style="--oc-color: #8B5CF6" for purple
+    ══════════════════════════════════════════════ -->
+    <section class="oc-hero" style="--oc-color: #1A52FF;">
+      <!-- Decorative bubbles -->
+      <div class="oc-hero__bubble" aria-hidden="true"></div>
+      <div class="oc-hero__bubble" aria-hidden="true"></div>
+      <div class="oc-hero__bubble" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="oc-hero__content">
+          <!-- TODO: Replace with character's species/world -->
+          <span class="oc-hero__eyebrow">Original Character &mdash; [Species]</span>
+          <!-- TODO: Replace with character name -->
+          <h1 class="oc-name">[Character Name]</h1>
+          <div class="oc-hero__tags">
+            <!-- TODO: Add relevant hero tags (species, role, pronouns, etc.) -->
+            <span class="oc-hero__tag">[Species]</span>
+            <span class="oc-hero__tag">[Role / Class]</span>
+            <span class="oc-hero__tag">[Pronouns]</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         PROFILE — Art + Info
+    ══════════════════════════════════════════════ -->
+    <section class="profile-section">
+      <div class="container">
+        <div class="profile-layout">
+
+          <!-- Left column: Character art -->
+          <div>
+            <!--
+              TODO: Replace with your character's reference art.
+              Option A — real image:
+                <div class="oc-art-frame">
+                  <img src="../assets/images/characters/oc-name/ref-sheet.png" alt="[Character Name] reference sheet">
+                </div>
+
+              Option B — placeholder (remove when you have art):
+            -->
+            <div class="oc-art-placeholder" role="img" aria-label="[Character Name] art placeholder">
+              🎨
+            </div>
+          </div>
+
+          <!-- Right column: Character info -->
+          <div class="stack stack--lg">
+            <div class="oc-info-box">
+              <h2 class="oc-info-box__title">Character Info</h2>
+              <dl class="stat-table">
+                <!-- TODO: Fill in each value -->
+                <dt class="stat-table__label">Full Name</dt>
+                <dd class="stat-table__value">[Full Name]</dd>
+
+                <dt class="stat-table__label">Nickname(s)</dt>
+                <dd class="stat-table__value">[Nickname or —]</dd>
+
+                <dt class="stat-table__label">Age</dt>
+                <dd class="stat-table__value">[Age]</dd>
+
+                <dt class="stat-table__label">Birthday</dt>
+                <dd class="stat-table__value">[Month Day]</dd>
+
+                <dt class="stat-table__label">Species</dt>
+                <dd class="stat-table__value">[Species]</dd>
+
+                <dt class="stat-table__label">Gender</dt>
+                <dd class="stat-table__value">[Gender / Pronouns]</dd>
+
+                <dt class="stat-table__label">Height</dt>
+                <dd class="stat-table__value">[Height]</dd>
+
+                <dt class="stat-table__label">Occupation</dt>
+                <dd class="stat-table__value">[Occupation / Role]</dd>
+
+                <dt class="stat-table__label">Theme Color</dt>
+                <dd class="stat-table__value">
+                  <span style="display:inline-flex; align-items:center; gap:6px;">
+                    <!-- TODO: Change color hex -->
+                    <span style="width:14px; height:14px; border-radius:50%; background:#1A52FF; display:inline-block;"></span>
+                    [#HEX]
+                  </span>
+                </dd>
+
+                <dt class="stat-table__label">Status</dt>
+                <dd class="stat-table__value">[Active / WIP / Retired]</dd>
+              </dl>
+            </div>
+
+            <!-- Optional: short quote -->
+            <div class="pull-quote">
+              <!-- TODO: Add a signature quote for this character, or remove this block -->
+              "[Character's signature quote goes here.]"
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         LORE / BACKSTORY
+    ══════════════════════════════════════════════ -->
+    <section class="section lore-section" id="lore">
+      <div class="container">
+        <h2 class="section-title">Backstory &amp; Lore</h2>
+
+        <div class="prose prose-center">
+          <!-- TODO: Write the character's lore/backstory here.
+               Use <p> tags for paragraphs, <h3> for sub-sections. -->
+          <p>
+            [Write the character's origin and background story here. Where did they come from?
+            What shaped who they are today? This section can be as long or short as you like.]
+          </p>
+
+          <h3>Early Life</h3>
+          <p>
+            [Tell us about where they grew up, their family, the events that defined their childhood.]
+          </p>
+
+          <h3>Present Day</h3>
+          <p>
+            [What is this character doing now? What are their goals, motivations, current conflicts?]
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         PERSONALITY
+    ══════════════════════════════════════════════ -->
+    <section class="section personality-section" id="personality">
+      <div class="container">
+        <h2 class="section-title">Personality</h2>
+
+        <!-- TODO: Add/remove/edit personality traits -->
+        <div class="personality-grid">
+          <div class="personality-trait">
+            <span class="personality-trait__dot" style="background: #1A52FF;"></span>
+            [Trait 1]
+          </div>
+          <div class="personality-trait">
+            <span class="personality-trait__dot" style="background: #FF6200;"></span>
+            [Trait 2]
+          </div>
+          <div class="personality-trait">
+            <span class="personality-trait__dot" style="background: #5E7AB8;"></span>
+            [Trait 3]
+          </div>
+          <div class="personality-trait">
+            <span class="personality-trait__dot" style="background: #FF7900;"></span>
+            [Trait 4]
+          </div>
+          <div class="personality-trait">
+            <span class="personality-trait__dot" style="background: #003DA5;"></span>
+            [Trait 5]
+          </div>
+          <!-- Add more traits as needed -->
+        </div>
+
+        <!-- Optional: Longer personality description -->
+        <div class="prose" style="margin-top: var(--space-8);">
+          <!-- TODO: Describe their personality in more detail, or delete this -->
+          <p>
+            [Optional: Write a more detailed description of the character's personality,
+            how they act around others, their quirks, fears, and loves.]
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         RELATIONSHIPS
+         TODO: Add/remove relationship cards as needed
+         Link each card to the related OC's page
+    ══════════════════════════════════════════════ -->
+    <section class="section relations-section" id="relationships">
+      <div class="container">
+        <h2 class="section-title">Relationships</h2>
+
+        <div class="relations-grid">
+          <!-- Relationship card -->
+          <a href="[other-oc].html" class="rel-card">
+            <!-- Option A: real thumbnail
+              <img src="../assets/images/characters/other-oc/thumbnail.png"
+                   alt="[Other OC Name]" class="rel-card__thumb">
+            -->
+            <!-- Option B: placeholder emoji -->
+            <div class="rel-card__thumb--placeholder" style="background: linear-gradient(135deg, #003DA5, #1A52FF);">
+              👤
+            </div>
+            <div>
+              <div class="rel-card__name">[Other OC Name]</div>
+              <div class="rel-card__role">[Relationship type, e.g. Best Friend]</div>
+            </div>
+          </a>
+
+          <!-- Add more relationship cards below following the same pattern -->
+          <!-- Example of another card: -->
+          <!--
+          <a href="[oc-name].html" class="rel-card">
+            <div class="rel-card__thumb--placeholder" style="background: linear-gradient(135deg, #FF6200, #FF7900);">
+              👤
+            </div>
+            <div>
+              <div class="rel-card__name">[Name]</div>
+              <div class="rel-card__role">[Rival / Mentor / Partner]</div>
+            </div>
+          </a>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         ART GALLERY
+         TODO: Replace placeholder items with real images
+         Each .gallery-item is clickable and opens the lightbox
+    ══════════════════════════════════════════════ -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <h2 class="section-title">Art Gallery</h2>
+
+        <div class="gallery-grid" id="gallery-grid">
+
+          <!--
+            REAL IMAGE EXAMPLE — copy this block for each piece of art:
+            <a href="../assets/images/characters/oc-name/art-1.png"
+               class="gallery-item"
+               data-caption="[Art description or date]">
+              <img src="../assets/images/characters/oc-name/art-1.png"
+                   alt="[Character name] — [brief description]"
+                   loading="lazy">
+              <div class="gallery-item__overlay" aria-hidden="true">&#128269;</div>
+            </a>
+          -->
+
+          <!-- Placeholder items (remove when you have real art) -->
+          <div class="gallery-item gallery-item--placeholder" aria-label="Art placeholder 1">🖼️</div>
+          <div class="gallery-item gallery-item--placeholder" aria-label="Art placeholder 2">🖼️</div>
+          <div class="gallery-item gallery-item--placeholder" aria-label="Art placeholder 3">🖼️</div>
+          <div class="gallery-item gallery-item--placeholder" aria-label="Art placeholder 4">🖼️</div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         PREV / NEXT OC NAVIGATION
+         TODO: Update links and names to the actual
+         previous and next characters in your roster
+    ══════════════════════════════════════════════ -->
+    <nav class="oc-pagination" aria-label="Navigate between characters">
+      <div class="container">
+        <div class="oc-nav">
+          <!-- Previous OC -->
+          <a href="[prev-oc].html" class="oc-nav__link oc-nav__link--prev">
+            <span aria-hidden="true">&larr;</span>
+            <div>
+              <div class="oc-nav__label">Previous</div>
+              <div class="oc-nav__name">[Prev Character Name]</div>
+            </div>
+          </a>
+
+          <a href="../characters.html" class="btn btn--secondary btn--sm" style="flex: none;">
+            All Characters
+          </a>
+
+          <!-- Next OC -->
+          <a href="[next-oc].html" class="oc-nav__link oc-nav__link--next">
+            <div>
+              <div class="oc-nav__label">Next</div>
+              <div class="oc-nav__name">[Next Character Name]</div>
+            </div>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+  </main>
+
+  <!-- Footer placeholder -->
+  <footer id="site-footer" role="contentinfo"></footer>
+
+  <!-- Lightbox (built by gallery.js, appended to body) -->
+
+  <!-- Scripts -->
+  <script src="../js/includes.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/gallery.js"></script>
+  <script src="../js/bubbles.js"></script>
+</body>
+</html>

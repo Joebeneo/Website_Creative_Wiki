@@ -1,0 +1,75 @@
+/* ============================================================
+   TYPOGRAPHY
+   Google Fonts imported via <link> in HTML <head>
+   ============================================================ */
+
+/* Headings */
+h1 { font-size: var(--text-4xl); }
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-2xl); }
+h4 { font-size: var(--text-xl); }
+h5 { font-size: var(--text-lg); }
+h6 { font-size: var(--text-base); }
+
+/* Utility classes */
+.text-display {
+  font-family: var(--font-display);
+}
+
+.text-hero {
+  font-family: var(--font-display);
+  font-size: var(--text-hero);
+  line-height: 1.1;
+}
+
+.text-muted {
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+}
+
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+
+.label {
+  font-size: var(--text-sm);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+}
+
+.lead {
+  font-size: var(--text-lg);
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-muted);
+}
+
+/* Prose — readable long-form text */
+.prose {
+  max-width: 72ch;
+  font-size: var(--text-base);
+  line-height: 1.8;
+}
+
+.prose p + p {
+  margin-top: var(--space-4);
+}
+
+.prose h2, .prose h3 {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-3);
+}
+
+/* Pull quote */
+.pull-quote {
+  border-left: 4px solid var(--color-orange);
+  padding: var(--space-4) var(--space-6);
+  margin: var(--space-8) 0;
+  font-size: var(--text-xl);
+  font-family: var(--font-display);
+  color: var(--color-blue-deep);
+  background: rgba(255, 98, 0, 0.06);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}

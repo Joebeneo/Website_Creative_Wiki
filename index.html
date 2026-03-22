@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A personal wiki for original characters — art, lore, and stories.">
+  <title>OC Wiki — Home</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles — order matters -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body class="page-body">
+
+  <!-- Header placeholder (filled by includes.js) -->
+  <header id="site-header" role="banner"></header>
+
+  <main>
+    <!-- ══════════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════════ -->
+    <section class="hero">
+      <!-- Decorative bubbles -->
+      <div class="hero__bubble" aria-hidden="true"></div>
+      <div class="hero__bubble" aria-hidden="true"></div>
+      <div class="hero__bubble" aria-hidden="true"></div>
+      <div class="hero__bubble" aria-hidden="true"></div>
+      <div class="hero__bubble" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero__content">
+          <span class="hero__eyebrow">Welcome to the Wiki</span>
+          <h1 class="hero__title">
+            Meet My<br>
+            <span>Original Characters</span>
+          </h1>
+          <p class="hero__subtitle">
+            A personal collection of OCs — their stories, lore, artwork, and everything in between.
+            Explore the world I've been building.
+          </p>
+          <div class="hero__actions">
+            <a href="characters.html" class="btn btn--primary">Browse Characters</a>
+            <a href="#about" class="btn btn--ghost">About This Wiki</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         FEATURED CHARACTERS
+    ══════════════════════════════════════════════ -->
+    <section class="section featured" id="featured">
+      <div class="container">
+        <div class="featured__header">
+          <h2 class="section-title">Featured Characters</h2>
+          <p class="lead">A few OCs to get you started.</p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Featured card 1 -->
+          <a href="characters/nova.html" class="character-card">
+            <div class="character-card__thumb--placeholder" style="background: linear-gradient(135deg, #1A52FF, #003DA5);">
+              ✦
+            </div>
+            <div class="character-card__body">
+              <h3 class="character-card__name">Nova</h3>
+              <p class="character-card__desc">A stargazing inventor with an obsession for the impossible and a heart full of hope.</p>
+              <div class="tags">
+                <span class="tag tag--blue">Human</span>
+                <span class="tag tag--orange">Inventor</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Featured card 2 -->
+          <a href="characters/cleo.html" class="character-card">
+            <div class="character-card__thumb--placeholder" style="background: linear-gradient(135deg, #FF6200, #FF7900);">
+              ☽
+            </div>
+            <div class="character-card__body">
+              <h3 class="character-card__name">Cleo</h3>
+              <p class="character-card__desc">A sharp-tongued wanderer who collects secrets like souvenirs and trusts almost nobody.</p>
+              <div class="tags">
+                <span class="tag tag--blue">Feline</span>
+                <span class="tag tag--muted">Rogue</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Placeholder card — replace with your next OC -->
+          <div class="character-card" style="opacity: 0.5; cursor: default;">
+            <div class="character-card__thumb--placeholder" style="background: linear-gradient(135deg, #5E7AB8, #0A1A3D);">
+              ?
+            </div>
+            <div class="character-card__body">
+              <h3 class="character-card__name">Coming Soon</h3>
+              <p class="character-card__desc">Another character is on the way. Check back later!</p>
+              <div class="tags">
+                <span class="tag tag--muted">???</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-12);">
+          <a href="characters.html" class="btn btn--secondary">See All Characters &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         ABOUT
+    ══════════════════════════════════════════════ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__image-wrap">
+            <div class="about__image--placeholder" aria-label="Site illustration placeholder">
+              🌊
+            </div>
+          </div>
+          <div class="about__text">
+            <h2 class="section-title">About This Wiki</h2>
+            <p>
+              Welcome! This is my personal creative wiki where I document all of my original characters.
+              Think of it as an alternative to Fandom — built exactly the way I want it, for my OCs.
+            </p>
+            <p>
+              Here you'll find character profiles, backstories, art galleries, and lore for every OC
+              I've created. Each page is a little window into the worlds they live in.
+            </p>
+            <p>
+              This site is always a work in progress — characters get updated, new ones get added,
+              and stories keep evolving. Feel free to explore!
+            </p>
+            <div style="margin-top: var(--space-8);">
+              <a href="characters.html" class="btn btn--primary">Explore Characters</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         ORANGE CTA BANNER
+    ══════════════════════════════════════════════ -->
+    <section class="cta-banner">
+      <!-- Decorative bubbles -->
+      <div class="cta-banner__bubble" aria-hidden="true"></div>
+      <div class="cta-banner__bubble" aria-hidden="true"></div>
+      <div class="cta-banner__bubble" aria-hidden="true"></div>
+      <div class="cta-banner__bubble" aria-hidden="true"></div>
+
+      <div class="container" style="position: relative; z-index: 1;">
+        <h2 class="cta-banner__title">Ready to meet everyone?</h2>
+        <p class="cta-banner__subtitle">Browse the full character roster and dive into their stories.</p>
+        <a href="characters.html" class="btn btn--secondary">View All Characters</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer placeholder (filled by includes.js) -->
+  <footer id="site-footer" role="contentinfo"></footer>
+
+  <!-- Scripts -->
+  <script src="js/includes.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/bubbles.js"></script>
+</body>
+</html>

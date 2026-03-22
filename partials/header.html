@@ -1,0 +1,30 @@
+<!-- SHARED HEADER — loaded by js/includes.js into #site-header -->
+<div class="site-header__inner">
+  <a href="/index.html" class="site-logo">
+    <span class="site-logo__icon" aria-hidden="true">&#9679;</span>
+    OC Wiki
+  </a>
+
+  <!-- Desktop navigation -->
+  <nav class="site-nav site-nav--desktop" aria-label="Main navigation">
+    <a href="/index.html" class="site-nav__link" data-nav="home">Home</a>
+    <a href="/characters.html" class="site-nav__link" data-nav="characters">Characters</a>
+    <a href="/index.html#about" class="site-nav__link" data-nav="about">About</a>
+    <a href="/characters.html" class="btn btn--primary btn--sm site-nav__cta">Browse OCs</a>
+  </nav>
+
+  <!-- Hamburger toggle (mobile) -->
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+    <span class="nav-toggle__bar"></span>
+    <span class="nav-toggle__bar"></span>
+    <span class="nav-toggle__bar"></span>
+  </button>
+</div>
+
+<!-- Mobile drawer -->
+<nav id="mobile-nav" class="site-nav site-nav--mobile" aria-label="Mobile navigation">
+  <a href="/index.html" class="site-nav__link" data-nav="home">Home</a>
+  <a href="/characters.html" class="site-nav__link" data-nav="characters">Characters</a>
+  <a href="/index.html#about" class="site-nav__link" data-nav="about">About</a>
+  <a href="/characters.html" class="btn btn--primary">Browse OCs</a>
+</nav>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse all original characters — profiles, lore, and art.">
+  <title>All Characters | OC Wiki</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/characters-list.css">
+</head>
+<body class="page-body" data-page="characters">
+
+  <!-- Header placeholder -->
+  <header id="site-header" role="banner"></header>
+
+  <main>
+    <!-- ══════════════════════════════════════════════
+         PAGE HERO
+    ══════════════════════════════════════════════ -->
+    <section class="chars-hero">
+      <!-- Decorative bubbles -->
+      <div class="chars-hero__bubble" aria-hidden="true"></div>
+      <div class="chars-hero__bubble" aria-hidden="true"></div>
+      <div class="chars-hero__bubble" aria-hidden="true"></div>
+
+      <div class="container">
+        <h1 class="chars-hero__title">All Characters</h1>
+        <div class="search-wrap">
+          <span class="search-wrap__icon" aria-hidden="true">&#128269;</span>
+          <input
+            type="search"
+            id="character-search"
+            class="search-input"
+            placeholder="Search by name, species, or trait..."
+            aria-label="Search characters"
+            autocomplete="off"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         FILTER BAR
+    ══════════════════════════════════════════════ -->
+    <div class="filter-bar" role="navigation" aria-label="Filter characters">
+      <div class="container">
+        <div class="filter-bar__inner">
+          <span class="filter-bar__label">Filter:</span>
+          <button class="filter-pill active" data-filter="all">All</button>
+          <button class="filter-pill" data-filter="human">Human</button>
+          <button class="filter-pill" data-filter="feline">Feline</button>
+          <button class="filter-pill" data-filter="magic">Magic</button>
+          <button class="filter-pill" data-filter="inventor">Inventor</button>
+          <!-- Add more filter tags as your roster grows -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════
+         CHARACTERS GRID
+    ══════════════════════════════════════════════ -->
+    <section class="section chars-grid">
+      <div class="container">
+        <p class="chars-count" id="chars-count" aria-live="polite">
+          Showing <span id="count-number">2</span> characters
+        </p>
+
+        <div class="grid-4" id="characters-grid" role="list">
+
+          <!-- ── Character Card: Nova ──────────────────── -->
+          <!-- To add a new character, copy one of these <article> blocks -->
+          <article class="character-card"
+                   role="listitem"
+                   data-name="nova"
+                   data-tags="human inventor curious hopeful"
+                   data-description="A stargazing inventor with an obsession for the impossible">
+            <a href="characters/nova.html" class="character-card__link" tabindex="-1" aria-hidden="true">
+              <div class="character-card__thumb--placeholder"
+                   style="background: linear-gradient(135deg, #1A52FF, #003DA5);"
+                   role="img"
+                   aria-label="Nova placeholder art">
+                ✦
+              </div>
+            </a>
+            <div class="character-card__body">
+              <a href="characters/nova.html" style="text-decoration: none; display: block;">
+                <h2 class="character-card__name">Nova</h2>
+                <p class="character-card__desc">A stargazing inventor with an obsession for the impossible and a heart full of hope.</p>
+                <div class="tags">
+                  <span class="tag tag--blue">Human</span>
+                  <span class="tag tag--orange">Inventor</span>
+                  <span class="tag tag--muted">Curious</span>
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- ── Character Card: Cleo ──────────────────── -->
+          <article class="character-card"
+                   role="listitem"
+                   data-name="cleo"
+                   data-tags="feline rogue sharp cunning wanderer"
+                   data-description="A sharp-tongued wanderer who collects secrets like souvenirs">
+            <a href="characters/cleo.html" class="character-card__link" tabindex="-1" aria-hidden="true">
+              <div class="character-card__thumb--placeholder"
+                   style="background: linear-gradient(135deg, #FF6200, #FF7900);"
+                   role="img"
+                   aria-label="Cleo placeholder art">
+                ☽
+              </div>
+            </a>
+            <div class="character-card__body">
+              <a href="characters/cleo.html" style="text-decoration: none; display: block;">
+                <h2 class="character-card__name">Cleo</h2>
+                <p class="character-card__desc">A sharp-tongued wanderer who collects secrets like souvenirs and trusts almost nobody.</p>
+                <div class="tags">
+                  <span class="tag tag--blue">Feline</span>
+                  <span class="tag tag--muted">Rogue</span>
+                  <span class="tag tag--muted">Cunning</span>
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- ╔══════════════════════════════════════════╗
+               ║  ADD NEW CHARACTER CARDS BELOW HERE     ║
+               ║  Copy the <article> block above,        ║
+               ║  update the data-* attributes and        ║
+               ║  card content, then link to the new page ║
+               ╚══════════════════════════════════════════╝ -->
+
+        </div>
+
+        <!-- Empty state (shown by search.js when no results) -->
+        <div class="empty-state" id="empty-state" aria-live="polite" hidden>
+          <span class="empty-state__emoji">&#128269;</span>
+          <h3>No characters found</h3>
+          <p>Try a different search term or clear the filters.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer placeholder -->
+  <footer id="site-footer" role="contentinfo"></footer>
+
+  <!-- Scripts -->
+  <script src="js/includes.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>
